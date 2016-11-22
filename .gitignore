@@ -1,0 +1,6 @@
+node_modules
+*.log
+client/build/*
+client/build/**
+client/assets/*.json
+client/node_modules

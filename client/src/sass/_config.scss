@@ -1,0 +1,119 @@
+/* ==========================================================================
+   Configuration, mix-ins & variables
+=========================================================================== */
+
+
+/* ==========================================================================
+   Fonts                                                                    */
+
+// * System default font catcher:
+$fontSystem:    system, -apple-system, BlinkMacSystemFont, ".SFNSDisplay-Regular",
+                "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;
+
+// * Main application font:
+$fontMain:      "Roboto", system, -apple-system, BlinkMacSystemFont,
+                ".SFNSDisplay-Regular", "Segoe UI", "Helvetica Neue",
+                Helvetica, sans-serif;
+
+// * Alternate application font (for headers etc.):
+$fontAlternate: "Roboto Slab", $fontSystem;
+
+// * Symbolic font (for paragraph numbers etc.):
+$fontSymbolic:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// * Code font:
+$fontCode:      "Fira Code", "Fira Mono", "Consolas", "Monaco", monospaced;
+
+/* ==========================================================================
+   Colors                                                                   */
+
+// * Base binary:
+$colorBaseDark:  rgb(5, 5, 5);
+$colorBaseLight: rgb(240, 240, 240);
+
+// * Base binary shades:
+$colorAlphaOneFourthDark:   transparentize($colorBaseDark, 0.25);
+$colorAlphaOneThirdDark:    transparentize($colorBaseDark, 0.33);
+$colorAlphaHalfDark:        transparentize($colorBaseDark, 0.5);
+$colorAlphaTwoThirdDark:    transparentize($colorBaseDark, 0.66);
+$colorAlphaThreeFourtDark:  transparentize($colorBaseDark, 0.9);
+$colorAlphaSuperlightDark:  lighten($colorBaseDark, 87%);
+$colorAlphaOneFourthLight:  transparentize($colorBaseLight, 0.25);
+$colorAlphaOneThirdLight:   transparentize($colorBaseLight, 0.33);
+$colorAlphaHalfLight:       transparentize($colorBaseLight, 0.5);
+$colorAlphaTwoThirdLight:   transparentize($colorBaseLight, 0.66);
+$colorAlphaThreeFourtLight: transparentize($colorBaseLight, 0.75);
+$colorAlphaExtraLight:      transparentize($colorBaseLight, 0.875);
+
+// * Base colored binary & shades:
+$colorBlue:       rgb(73, 173, 255);
+$colorBlueTinted: mix(white, $colorBlue, 10%);
+$colorBlueShaded: mix(black, $colorBlue, 10%);
+$colorRuby:       rgb(216, 51, 74);
+$colorRubyTinted: mix(white, $colorRuby, 10%);
+$colorRubyShaded: mix(black, $colorRuby, 10%);
+
+// * Pallette:
+$colorGrapefruit:  rgb(237, 85, 101);
+$colorBittersweet: rgb(233, 87, 63);
+$colorSunflower:   rgb(246, 187, 66);
+$colorStraw:       rgb(224, 195, 65);
+$colorGrass:       rgb(140, 193, 82);
+$colorBasil:       rgb(42, 186, 102);
+$colorMint:        rgb(55, 188, 155);
+$colorTeal:        rgb(125, 177, 177);
+$colorAqua:        rgb(59, 175, 218);
+$colorJeans:       rgb(74, 137, 220);
+$colorLavender:    rgb(150, 122, 220);
+$colorPlum:        rgb(106, 80, 167);
+$colorRose:        rgb(215, 112, 173);
+$colorBeaver:      rgb(170, 142, 105);
+$colorChoko:       rgb(123, 113, 99);
+$colorLightGrey:   rgb(230, 233, 237);
+$colorGrey:        rgb(170, 178, 189);
+$colorDarkGrey:    rgb(67, 74, 84);
+$colorCharcoal:    rgb(50, 49, 51);
+
+$colorShineOrange: rgb(247, 121, 0);
+$colorShineBerry:  rgb(213, 25, 84);
+$colorShineGrape:  rgb(128, 13, 170);
+$colorShineSea:    rgb(84, 55, 195);
+$colorShineSky:    rgb(36, 115, 184);
+$colorShineAqua:   rgb(25, 180, 185);
+
+/* ==========================================================================
+   Media queries                                                            */
+
+$mq-mobile-portrait:  320px !default;
+$mq-mobile-landscape: 480px !default;
+$mq-tablet-portrait:  768px !default;
+$mq-tablet-landscape: 1024px !default;
+$mq-desktop:          1382px !default;
+
+/* ==========================================================================
+   Component & element-related settings                                     */
+
+// * Layout::::::::;
+
+// * Layout: sidebar
+$layoutSidebarBackground: $colorBaseLight;
+// * Layout: Main Navbar
+$layoutNavMainBackground: transparentize($colorBaseLight, 0.7);
+
+// * General: wrapper background
+$generalWrapperBackground: rgb(232, 232, 232);
+$generalLinkColor: rgb(0,0,0);
+
+
+/* ==========================================================================
+   Z dimension object order                                                 */
+
+$zOffcanvasMenu:            100;
+$zLayoutPusher:             500;
+$zHeaderBar:                600;
+
+
+$zFader:                    999;
+$zOffcanvasMenuOpenPusher: 1000;
+$zOffcanvasMenuEffect:     1001;
+$zFaderOver:               1100;

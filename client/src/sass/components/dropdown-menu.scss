@@ -1,0 +1,32 @@
+ul.dropdown-menu {
+  background: white;
+  border: 1px #dfdfdf;
+  border-radius: 0;
+  padding: 0;
+  font-family: $fontMain;
+
+  li {
+    padding: 1rem 1.667rem;
+
+    a {
+      display: inline;
+      padding: 0;
+    }
+
+    &:first-child {
+
+    }
+
+    &:hover {
+      background-color: $colorBlueShaded;
+      color: white;
+      cursor: pointer;
+
+      a {
+        color: white;
+        background: transparent;
+        border-bottom: 1px transparentize($colorBaseLight, 0.7) solid !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+/* ==========================================================================
+   General initial stylesheet
+   ========================================================================== */
+
+body {
+  background-color: #f5f5f5;
+}
+
+#wrapper {
+  background-color: transparent;
+}
+
+
+* {
+  font-family: $fontMain;
+}
+
+.h4 {
+  color: black;
+  font-size: 1.4em;
+}
+
+input:focus {
+  outline: none;
+}
+
+h1 {
+  font-family: $fontAlternate;
+  color: $colorDarkGrey;
+  font-weight: 400;
+  padding: 20px 30% 20px 0;
+  margin: 0;
+}
+
+h2 {
+  font-family: $fontAlternate;
+  color: black;
+  font-size: 24px;
+  font-weight: 400;
+
+  a {
+    font-family: $fontAlternate;
+    text-decoration: none;
+    border-bottom: 1px transparentize($colorDarkGrey, 0.7) solid;
+    color: $colorDarkGrey;
+
+    &:hover {
+      color: $colorDarkGrey;
+      border-bottom: 1px transparentize($colorDarkGrey, 0.3) solid;
+    }
+  }
+}
+
+
+.gradiented {
+
+  &.blue-to-violet {
+    background: rgb(60,179,241);
+    background: -moz-linear-gradient(left, rgba(60,179,241,1) 0%, rgba(142,124,247,1) 100%);
+    background: -webkit-linear-gradient(left, rgba(60,179,241,1) 0%,rgba(142,124,247,1) 100%);
+    background: linear-gradient(to right, rgba(60,179,241,1) 0%,rgba(142,124,247,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3cb3f1', endColorstr='#8e7cf7',GradientType=1 );
+  }
+
+  &.sky-to-subset {
+    background: rgb(60,179,241);
+    background: -moz-linear-gradient(left, rgba(60,179,241,1) 0%, rgba(198,79,224,1) 100%);
+    background: -webkit-linear-gradient(left, rgba(60,179,241,1) 0%,rgba(198,79,224,1) 100%);
+    background: linear-gradient(to right, rgba(60,179,241,1) 0%,rgba(198,79,224,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3cb3f1', endColorstr='#c64fe0',GradientType=1 );
+  }
+}

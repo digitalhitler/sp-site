@@ -1,0 +1,34 @@
+/* ==========================================================================
+   Default
+   ========================================================================== */
+
+// Was before:
+// #nprogress {
+// Now is:
+
+@import "config";
+
+.page-loading-bar {
+  .bar {
+    background: $color-yellow-100 !important;
+    height: 3px !important;
+
+    .peg {
+      box-shadow: none !important;
+    }
+  }
+
+  .spinner {
+    display: none !important;
+    top: 50% !important;
+    right: 50% !important;
+
+    .spinner-icon {
+      width: 4em !important;
+      height: 4em !important;
+      margin: -4em -4em 0 0 !important;
+      border-top-color: $color-yellow-100 !important;
+      border-left-color: $color-yellow-100 !important;
+    }
+  }
+}
