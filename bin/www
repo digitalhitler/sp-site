@@ -4,6 +4,8 @@
  * Module dependencies.
  */
 
+global.appConfig = require('../environment');
+
 var app = require('../app');
 var debug = require('debug')('sp-site:server');
 var http = require('http');
@@ -12,7 +14,7 @@ var http = require('http');
  * Get port from environment and store in Express.
  */
 
-var port = normalizePort(process.env.PORT || '3000');
+var port = normalizePort(appConfig.http.port || 911);
 app.set('port', port);
 
 /**
