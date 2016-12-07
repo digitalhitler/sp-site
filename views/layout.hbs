@@ -9,20 +9,50 @@
     <meta name="description" content="{{meta_description}}" />
 
     <!-- Stylesheets -->
-    <link rel='stylesheet' href='/build/vendor.css' />
-    <link rel='stylesheet' href='/build/app.css' />
-    <link rel="shortcut icon" href="/build/favicon.ico">
+    <link rel='stylesheet' href='/static/vendor.css' />
+    <link rel='stylesheet' href='/static/app.css' />
+    <link rel="shortcut icon" href="/static/favicon.ico">
 
     <!-- Stylesheets by vendors: -->
     <link rel="stylesheet" type="text/css" media="screen" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700|Roboto:100,300,300i,400,400i,500,500i,700&amp;subset=cyrillic">
 
     <!-- Front-App -->
-    <script type="text/javascript" src="/build/common.js"></script>
-    <script type="text/javascript" src="/build/vendor.js"></script>
-    <script type="text/javascript" src="/build/app.js"></script>
+    <script type="text/javascript" src="/static/common.js"></script>
+    <script type="text/javascript" src="/static/vendor.js"></script>
+    <script type="text/javascript" src="/static/app.js"></script>
   </head>
   <body>
-    {{{body}}}
+    <gradient-bg></gradient-bg>
+    <section class="set-layout one-column">
+      <header class="site-title">
+        <h1>
+          <a href="/">Сергей Петренко</a>
+        </h1>
+        <nav class="site-navigation">
+          <ul class="site-sections">
+            <li>
+              <a href="/wrote/">Написал</a>
+            </li>
+            <li>
+              <a href="/shoot/">Нафоткал</a>
+            </li>
+            <li>
+              <a href="/committed/">Накоммитил</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-body">
+      {{{body}}}
+      </main>
+      <footer class="site-footer">
+        <section class="site-copyright">
+          <p>&copy; 1992&#150;2016</p>
+          <p>Все права, наверное, защищены.</p>
+        </section>
+      </footer>
+    </section>
+
   </body>
 </html>

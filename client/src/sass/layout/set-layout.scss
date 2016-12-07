@@ -1,0 +1,44 @@
+.set-layout {
+  width: 100%;
+
+  .one-column {
+
+  }
+
+  // @todo: warning - two-columns layout is incomplete
+  &.two-columns {
+    position: absolute;
+    min-height: 100%;
+    box-sizing: border-box;
+
+    .left-side {
+      position: relative;
+      float: left;
+      width: 50%;
+      min-height: 100%;
+      height: 100%;
+      border: 5px orange solid;
+      box-sizing: border-box;
+
+      &.frozen {
+        top: 0;
+        left: 0;
+        width: 50%;
+        bottom: 0;
+        position: fixed;
+      }
+    }
+
+    .right-side {
+      position: relative;
+      box-sizing: border-box;
+      min-height: 100%;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 50%;
+      float: right;
+      position: fixed;
+    }
+  }
+}

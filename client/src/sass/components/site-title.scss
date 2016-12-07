@@ -1,0 +1,150 @@
+.set-layout.one-column {
+  .site-title {
+    display: block;
+    background-color: $layoutHeaderBackground;
+    height: $layoutHeaderHeight;
+    max-height: $layoutHeaderHeight;
+    overflow: hidden;
+
+    h1 {
+      display: inline-block;
+      line-height: $layoutHeaderHeight;
+      margin: 0;
+      font-size: 1.2rem;
+      font-weight: 600;
+      background-color: $colorMint;
+      float: left;
+
+      a {
+        color: $colorBaseLight;
+        text-decoration: none;
+        padding: 0 1rem;
+        display: inline-block;
+      }
+
+      &:hover {
+        background-color: darken($colorMint, 5%);
+        cursor: pointer;
+        a {
+          border-bottom: 1px solid transparentize($colorBaseLight, 0.6);
+        }
+      }
+    }
+
+    nav.site-navigation {
+      display: inline-block;
+      width: 50%;
+      max-width: 50%;
+      line-height: 1.5rem;
+      float: left;
+
+      ul.site-sections {
+        padding:    0 1rem;
+        margin:     0;
+        list-style: none;
+
+        li {
+          font-size:   1rem;
+          line-height: $layoutHeaderMenuHeight;
+          display:     inline-block;
+          padding: 0rem;
+          margin: 0 1rem 0 0;
+
+          a {
+            //line-height: $layoutHeaderHeight;
+            text-decoration: none;
+            color: $colorBaseLight;
+            border-bottom: 1px solid transparentize($colorBaseLight, 0.6);
+
+            &:hover {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// @todo: WARNING: two-columns layout is incomplete
+.set-layout.two-columns {
+  *zoom: 1;
+
+  &:before, &:after {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+
+  .site-title {
+    border: 1px red solid;
+    position: relative;
+    height: 10rem;
+    width: 10rem;
+
+    h1 {
+      font-size: 1.6rem;
+      padding: 0;
+      margin: 0;
+
+
+      a {
+        bottom: 0;
+        position: absolute;
+
+        padding: 2rem;
+        text-align: right;
+        background-color: $colorSunflower;
+        text-decoration: none;
+        color: $colorBaseDark;
+        border-bottom: 1px solid transparentize($colorBaseLight, 0.7);
+
+        &:hover {
+          color: $colorShineBerry;
+          border-bottom-color: transparentize($colorShineBerry, 0.6);
+        }
+      }
+    }
+
+    .site-navigation {
+      display: block;
+      line-height: 1.5rem;
+
+      ul.site-sections {
+        padding:    0;
+        margin:     0;
+        list-style: none;
+
+        li {
+          font-size:   1.2rem;
+          line-height: 1.5rem;
+          display:     inline-block;
+          padding: 0rem;
+          margin: 0 1rem 0 0;
+
+          a {
+            line-height: 1.5rem;
+            text-decoration: none;
+            color: $colorMint;
+            border-bottom: 2px solid transparentize($colorMint, 0.6);
+          }
+        }
+      }
+    }
+  }
+
+  .site-footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border: 1px red solid;
+
+    .site-copyright {
+
+    }
+  }
+}

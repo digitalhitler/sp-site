@@ -23,6 +23,7 @@ if(window) {
   window.Riot = require("riot");
   window.Debug = require("debug");
   window.ModernizrModule = require("./modernizr");
+  window.GradientEngine = require("granim");
 
   Moment.locale('ru');
 

@@ -10,6 +10,9 @@
 $fontSystem:    system, -apple-system, BlinkMacSystemFont, ".SFNSDisplay-Regular",
                 "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;
 
+$fontSansSerif: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica,helvetica neue,ubuntu,
+                roboto,noto,segoe ui,arial,sans-serif;
+
 // * Main application font:
 $fontMain:      "Roboto", system, -apple-system, BlinkMacSystemFont,
                 ".SFNSDisplay-Regular", "Segoe UI", "Helvetica Neue",
@@ -71,6 +74,7 @@ $colorBeaver:      rgb(170, 142, 105);
 $colorChoko:       rgb(123, 113, 99);
 $colorLightGrey:   rgb(230, 233, 237);
 $colorGrey:        rgb(170, 178, 189);
+$colorSubtileGrey: rgb(245, 245, 245);
 $colorDarkGrey:    rgb(67, 74, 84);
 $colorCharcoal:    rgb(50, 49, 51);
 
@@ -95,10 +99,21 @@ $mq-desktop:          1382px !default;
 
 // * Layout::::::::;
 
+
+// * Layout: body (subtile) background
+$layoutBodyBackground: $colorSubtileGrey;
+
+// * Layout: Header
+$layoutHeaderBackground: $colorDarkGrey;
+$layoutHeaderHeight:     3rem;
+$layoutHeaderMenuHeight: $layoutHeaderHeight - 0.2rem;
+
 // * Layout: sidebar
 $layoutSidebarBackground: $colorBaseLight;
+
 // * Layout: Main Navbar
 $layoutNavMainBackground: transparentize($colorBaseLight, 0.7);
+
 
 // * General: wrapper background
 $generalWrapperBackground: rgb(232, 232, 232);
